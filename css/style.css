@@ -36,7 +36,7 @@ a:hover{
 
 header > a{
     display: block;
-    columns: black;
+    columns: rgba(0,0,0,.87);
     font-size: 13px;
     line-height: 24px;
 
@@ -70,14 +70,16 @@ header > a{
 #signin{
     font-size: 14px;
     line-height: 1rem;
-    font-weight: 1rem;
+    font-weight: 500;
     color: white;
-    background-color: blue;
+    background-color: rgb(26, 115, 232);
     border: 1px solid transparent;
     border-radius: 4px;
     padding: 9px 23px;
     margin: 0 12px 0 8px;
     min-width: 96px;
+    text-align: center;
+    letter-spacing: 0.25px;
 }
 
 #signin:hover{
@@ -88,7 +90,7 @@ header > a{
 }
 
 #signin:focus{
-    background-color: purple;
+    background-color: #1c5fba;
     box-shadow: 0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);
 }
 
@@ -102,118 +104,111 @@ header > a{
 main{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
-}
-
-main .row:first-child{
-    display: flex;
-    
-    justify-content: center;
     align-items: center;
 }
 
-main .row:first-child > #google-img{
-    align-content: center;
-
+#sec-logo{
+    display: flex;
+    height: calc(100vh - 560px);
+    align-items: flex-end;
+    min-height: 92px;
+    max-height: 290px;
 }
 
+#ico-search {
+    padding-right: 13px;
+    width: 33px;
+    height: 44px;
+    fill: #9aa0a6;
+}
 
-main .row:nth-child(2){
+#ico-mic{
+    width: 44px;
+    height: 44px;
+    padding: 0 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ico-mic svg{
+    width: 24px;
+    height: 24px;
+}
+
+#search-form{
+    padding: 20px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    height: 140px;
-    justify-content: center;
     align-items: center;
 }
 
-main .row:nth-child(2) > #search{
-    height: 44px;
-    width: 582px;
-    background: #fff;
+#form-input{
+    width: 100%;
+    max-width: 584px;
+    width: 100%;
     border: 1px solid #dfe1e5;
     border-radius: 24px;
-    margin: 0 auto;
-}
-
-main .row:nth-child(2) > #search > input{
-    background-color: transparent;
-    border: none;
-    margin: 0;
-    padding: 0;
-    color: rgba(0, 0, 0, 0.87);
-    width: 483px;
-    height: 34px;
-
-}
-
-main .row:nth-child(2) > #search > svg{
-    width: 20px;
-    height: 44px;
-}
-
-main .row:nth-child(2) > #search > div{
+    margin-top: 6px;
+    padding: 0 8px 0 14px;
     display: flex;
-    flex-direction: row;
-
-    width: 584px;
-    height: 58px;
 }
 
-main .row:nth-child(2) > #search > div > .btn{
-    border-radius: 4px;
-    font-size: 14px;
+#form-input:hover, 
+#form-input:focus-within{
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: transparent;
+}
+
+#form-input input{
+    flex-grow: 1;
+    border: none;
+    outline: none;
+}
+
+#sec-buttons{
+    padding-top: 18px;
+}
+
+#sec-buttons button{
     margin: 11px 4px;
     padding: 0 16px;
     line-height: 27px;
-    height: 36px;
-    width: 143px;
-    text-align: center;
-    cursor: pointer;
-    border: 1px solid #f8f9fa;
-
-}
-
-
-main .row:nth-child(2) > #search > div > button{
     font-size: 14px;
-    padding: 0 16px;
-    background-color: #F8F9FA;
-    border: 1px solid #F8F9FA;
-    border-radius: 4px;
     color: #3c4043;
-    margin: 11px 4px;
-    line-height: 27px;
-    height: 36px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
     min-width: 54px;
-    text-align: center;
     cursor: pointer;
+    user-select: none;
+    height: 36px;
+    border-radius: 4px;
 }
 
-main .row:nth-child(2) > #search > div > button:hover{
+#sec-buttons button:hover{
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
     border: 1px solid #dadce0;
     color: #202124;
-    box-shadow: 0 1px 1px rgba(0,0,0,.1);
-
 }
 
-main .row:last-child{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+
+#sec-buttons button:focus{
+    border: 1px solid #4285f4;
+    outline: none;
 }
 
-main .row:last-child>a{
-    color: #1a0dab;
-    text-decoration: none;
-    cursor: pointer;
-    line-height: 28px;
-    padding: 0 3px;
-}
-
-main .row:last-child > row{
+#sec-lang{
+    margin-top: -8px;
     font-size: 13px;
+    color: #4d5156;
+    line-height: 28px;
+}
+
+#sec-lang a{
+    padding: 0 3px;
 }
 
 
