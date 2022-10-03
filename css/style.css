@@ -1,0 +1,103 @@
+@import url(reset.css);
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.clearfix:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    padding: 6px;
+    align-items: center;
+    height: 60px;
+}
+
+a{
+    text-decoration: none;
+/*     color: black; */
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+header > a{
+    display: block;
+    columns: black;
+    font-size: 13px;
+    line-height: 24px;
+
+
+}
+
+#apps{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#apps:hover{
+    background-color: rgba(60,64,67,0.8);
+}
+
+#apps > svg{
+    width: 24px;
+    height: 24px;
+    fill: #5f6368;
+}
+
+#images{
+    padding: 0 15px;
+}
+
+#signin{
+    font-size: 14px;
+    line-height: 1rem;
+    font-weight: 1rem;
+    color: white;
+    background-color: blue;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 9px 23px;
+    margin: 0 12px 0 8px;
+    min-width: 96px;
+
+
+}
+
+#signin:hover{
+    background-color: #1b66c9;
+    box-shadow: 0 1px 3px 1px rgba(66,64,67,.15),0 1px 2px 0 rgba(60,64,67,.3);
+    text-decoration: none;
+
+}
+
+#signin:focus{
+    background-color: purple;
+    box-shadow: 0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);
+}
+
+#signin:active{
+    background-color: #1b63c1;
+    box-shadow: 0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);
+}
+
+
+
