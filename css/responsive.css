@@ -3,3 +3,9 @@
         justify-content: center;
     }
 }
+
+@media all and (max-width: 1200px){
+    #nav-links {
+        justify-content: space-evenly;
+    }
+}
