@@ -54,7 +54,7 @@ header > a{
 }
 
 #apps:hover{
-    background-color: rgba(60,64,67,0.8);
+    background-color: rgba(60,64,67,0.08);
 }
 
 #apps > svg{
